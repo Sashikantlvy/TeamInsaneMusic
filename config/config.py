@@ -41,8 +41,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", None)
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", None)
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/STATUSDAIRY2")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/VOICEOFHEART0")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 
@@ -97,7 +97,7 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e5938d9ca8fb7c2724f80.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/3eaaee3b5cfbc0e42f2f3.jpg"
 )
 
 PING_IMG_URL = getenv(
