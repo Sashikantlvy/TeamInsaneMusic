@@ -87,11 +87,89 @@ async def settings_cb(client, CallbackQuery, _):
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
-        InputMediaVideo("https://te.legra.ph/file/89eacfb3e64ef165d6f6f.mp4"),
+        InputMediaVideo("https://telegra.ph/file/2e0d941212829173c69e8.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")]]
+            [
+                [
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀᴛᴛɪɴɢ", url="https://t.me/VOICEOFHEART0"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    ),
+                ]
+            ]
         ),
     )
+
+@app.on_callback_query(filters.regex("lood") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="ᴀɴᴏɴʏᴍᴏᴜs", url="https://t.me/ANONYMOUS_OD_13"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/STATUSDAIRY2"
+                    ),
+
+                    InlineKeyboardButton(
+                        text="ᴍᴜsɪᴄ ɢʀᴏᴜᴘ", url="https://t.me/+YUDTBz5C_1o0YzE1"
+                    ),
+                    
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT"
+                    ),
+
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀᴛᴛɪɴɢ", url="https://t.me/VOICEOFHEART0"
+                    ),
+                    
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    )
+                ],
+            ]
+        ),
+    )
+
+@app.on_callback_query(filters.regex("donate") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ᴀʀᴇ ʏᴏᴜ ɪɴᴛᴇʀᴇsᴛᴇᴅ ɪɴ ʜᴇʟᴘɪɴɢ ᴍʏ ᴄʀᴇᴀᴛᴏʀ\nᴡɪᴛʜ ʜɪs ᴇғғᴏʀᴛs ᴛᴏ ᴋᴇᴇᴘ ᴍᴇ ɪɴ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ?\nɪғ ʏᴇs, ʏᴏᴜ'ʀᴇ ɪɴ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ.\n\nᴡᴇ ᴇᴍᴘʜᴀsɪsᴇ ᴛʜᴇ ɪᴍᴘᴏʀᴛᴀɴᴄᴇ ᴏғ ɴᴇᴇᴅɪɴɢ ғᴜɴᴅs ᴛᴏ ᴋᴇᴇᴘ ᴇᴍᴍᴀ ᴍᴜsɪᴄ ᴜɴᴅᴇʀ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ. ʏᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ɪɴ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ᴏғ ᴍᴏɴᴇʏ ᴛᴏ ᴇᴍᴍᴀ ᴍᴜsɪᴄ sᴇʀᴠᴇʀs ᴀɴᴅ ᴏᴛʜᴇʀ ᴜᴛɪʟɪᴛɪᴇs ᴡɪʟʟ ᴀʟʟᴏᴡ ᴜs ᴛᴏ sᴜsᴛᴀɪɴ ᴛʜᴇ ʟɪғᴇsᴘᴀɴ ɪɴ ᴛʜᴇ ʟᴏɴɢ ᴛᴇʀᴍ. ᴡᴇ ᴡɪʟʟ ᴜsᴇ ᴀʟʟ ᴏғ ᴛʜᴇ ᴅᴏɴᴀᴛɪᴏɴs ᴛᴏ ᴄᴏᴠᴇʀ ғᴜᴛᴜʀᴇ ᴇxᴘᴇɴsᴇs ᴀɴᴅ ᴜᴘɢʀᴀᴅᴇs ᴏғ ᴛʜᴇ sᴇʀᴠᴇʀs ᴄᴏsᴛs. ɪғ ʏᴏᴜ'ᴠᴇ ɢᴏᴛ sᴘᴀʀᴇ ᴍᴏɴᴇʏ ᴛᴏ ʜᴇʟᴘ ᴜs ɪɴ ᴛʜɪs ᴇғғᴏʀᴛ, ᴋɪɴᴅʟʏ ᴅᴏ sᴏ ᴀɴᴅ ʏᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ᴄᴀɴ ᴀʟsᴏ ᴍᴏᴛɪᴠᴀᴛᴇ ᴜs ᴋᴇᴇᴘ ʙʀɪɴɢ ᴏɴ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs.\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴏᴡɴᴇʀ - <a href=\"https://t.me/ANONYMOUS_OD_13\">ᴀɴᴏɴʏᴍᴏᴜs💝</a>.\n\nʏᴏᴜ ᴄᴀɴ ʜᴇʟᴘ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴡɪᴛʜ ᴅᴏɴᴀᴛɪᴏɴs",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    ),
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
+                    )
+                ],
+            ]
+        ),
+    )
+    
 
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
